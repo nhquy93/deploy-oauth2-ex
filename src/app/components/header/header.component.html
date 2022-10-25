@@ -1,0 +1,27 @@
+<div class="header"
+     scrollToShrink>
+    <div class="header__wrap container">
+        <div class="header__logo">
+            <a href="/home">
+                <img src="assets/tmovie.svg"
+                     alt="" />
+                tMovies
+            </a>
+        </div>
+        <ul class="header__nav">
+            <li><a routerLink="/home"
+                   routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/movie"
+                   routerLinkActive="active">Movies</a></li>
+            <li><a routerLink="/tv"
+                   routerLinkActive="active">TV Series</a></li>
+            <li *ngIf="!user"><a routerLink=""
+                   (click)="openLogin()">Login</a></li>
+            <!-- <li *ngIf="isLoggedIn"><a routerLink=""
+                   (click)="signOut()">Logout</a></li> -->
+       <li *ngIf="user" (click)="openProfile()" style="cursor: pointer;">
+              <img [src]="avatar" width="50px" height="50px"  class="avatar"/>
+       </li>
+        </ul>
+    </div>
+</div>
