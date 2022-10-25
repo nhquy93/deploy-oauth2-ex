@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-themoviedb": {
+    "deploy-oauth2-ex": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-themoviedb",
+            "outputPath": "dist/deploy-oauth2-ex",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-themoviedb:build:production"
+              "browserTarget": "deploy-oauth2-ex:build:production"
             },
             "development": {
-              "browserTarget": "ng-themoviedb:build:development"
+              "browserTarget": "deploy-oauth2-ex:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-themoviedb:build"
+            "browserTarget": "deploy-oauth2-ex:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "ng-themoviedb"
+  "defaultProject": "deploy-oauth2-ex"
 }
