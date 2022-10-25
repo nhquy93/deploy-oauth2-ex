@@ -31,7 +31,7 @@ export class UserInfoComponent implements OnInit {
     });
   }
   logOut(){
-    this._authService.signOut();
+    this._authService.signOut(true);
     window.location.reload();
   }
 
