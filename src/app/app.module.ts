@@ -16,6 +16,7 @@ import { OAuthModule } from 'angular-oauth2-oidc';
 import { GoogleApiService } from 'src/app/services/google-api.service';
 import { FacebookLoginProvider, GoogleLoginProvider, MicrosoftLoginProvider, SocialAuthService, SocialAuthServiceConfig } from 'angularx-social-login';
 import { UserInfoComponent } from './components/user-info/user-info.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -64,8 +65,8 @@ import { UserInfoComponent } from './components/user-info/user-info.component';
               '2f897049-2aba-4942-9ef6-3cc684a822c4',
               {
                 authority: 'https://login.microsoftonline.com/18023bac-d502-448e-9a2c-1f737b0a9576',
-                redirect_uri: 'http://localhost:4200',
-                logout_redirect_uri: 'http://localhost:4200'
+                redirect_uri: environment.production ? 'https://nhquy93.github.io/deploy-oauth2-ex' : 'http://localhost:4200',
+                logout_redirect_uri: environment.production ? 'https://nhquy93.github.io/deploy-oauth2-ex' : 'http://localhost:4200'
               }
             ),
           },
