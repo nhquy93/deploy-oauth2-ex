@@ -16,9 +16,9 @@ export class MovieListComponent implements OnInit, OnChanges {
   config: SwiperOptions = {
     modules: [Autoplay],
     autoplay: {
-      delay: 5000
+      delay: 30000
     },
-    speed: 1000,
+    speed: 3000,
     slidesPerView: 'auto',
     spaceBetween: 10,
     grabCursor: true

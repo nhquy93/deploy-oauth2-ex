@@ -20,9 +20,9 @@ export class MovieSlideComponent implements OnInit, OnChanges, OnDestroy {
   config: SwiperOptions = {
     modules: [Autoplay],
     autoplay: {
-      delay: 5000
+      delay: 30000
     },
-    speed: 1000,
+    speed: 3000,
     // effect: 'fade',
     // coverflowEffect: {
     //   slideShadows: true,

@@ -22,7 +22,7 @@ export class UserInfoComponent implements OnInit {
           this.avatar = user.photoUrl;
         }
         if (user.provider == "FACEBOOK") {
-          this.avatar = user.response.picture.data.url;
+          this.avatar = 'avf';
         }
         if (user.provider == "MICROSOFT" && user.photoUrl) {
           this.avatar = user.photoUrl;
