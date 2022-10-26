@@ -3,7 +3,7 @@
     <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
   </div>
   <div class="modal-body">
-    <div><img [src]="avatar === 'avf' ? '/assets/avatar-fake.png' : avatar" width="100px" height="100px"/></div>
+    <div><img [src]="avatar === 'avf' ? imgPath : avatar" width="100px" height="100px"/></div>
     <table width="100%" class="table-profile">
         <tr style="color: black;">
             <td width="30%">First Name:</td>
